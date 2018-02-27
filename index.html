@@ -3,60 +3,151 @@
 <head>
     <meta charset="utf-8"/>
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    @import url('https://fonts.googleapis.com/css?family=Kavivanar|Lobster|Montserrat');
+      .col1{
+            width: 8.333%;
+        }
+        .col2{
+            width:16.666%;
+        }
+        .col3{
+            width: 25%;
+        }
+        .col4{
+            width: 33.332%;
+        }
+        .col5{
+            width: 41.665%;
+        }
+        .col6{
+            width: 50%;
+        }
+        .col7{
+            width: 58.333%;
+        }
+        .col8{
+            width: 66.666%;
+        }
+        .col9{
+            width: 75%;
+        }
+        .col10{
+            width: 83.332%;
+        }
+        .col11{
+            width: 91.665%;
+        }
+        .col12{
+            width: 100%;
+        }
+        .col{
+            float:left;
+            box-sizing: border-box;
+        }    
+        .row{
+            overflow:hidden;
+        }
     body{
-        font-family: sans-serif;
-        background-color: #34A5F9;
-        color:aliceblue;
+        font-family: 'Lobster', cursive;
+        background-color: rgb(207, 207, 207);
+        color:#111942;
         }
     div {
-        position: absolute;
-        top: 30px;
-        right: 50px;
+        position: relative;
+        top: 0;
+        left: 0;
         }
+    section{
+        position: relative;
+        margin: 20px 70px 20px;
+        padding: 30px;
+        height: 200px;
+    }
+    footer{
+        position: absolute;
+        right: 50px;
+        top: 610px;
+        width: 700px;
+    }
+    img{
+        position: absolute;
+        top: -25px;
+        width: 557px;
+        right: 70px;
+        margin: 50px;
+        height: 88%;
+    }
+    p{
+        color:#212745;
+    }
+    #section-principal{
+        background-color: #E5D55E;
+    }
+    #section-secondary{
+        background-color: #6A7CDB;
+    }
+    #section-third{
+        background-color: #23D1D1;
+    }
+    #section-fourd{
+        background-color: #EF7A50;
+    }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Saúl Bernardo Trejo Ortiz</h1>
-        <p>Cda de Camelia Mz13 Lot28</p>
-        <p>5579071262</p>
-        <p>saulb_trejo@hotmail.com</p>
+    <img src="imagen/saulcv2.jpg"/>
+    <div class="row">
+        <div class="col col6">
+            <section id="section-principal">
+                    <h1>Saúl Bernardo Trejo Ortiz</h1>
+                    <p>Cda de Camelia Mz13 Lot28</p>
+                    <p>5579071262</p>
+                    <p>saulb_trejo@hotmail.com</p>
+        </div>
+            </section>
     </div>
 </body>
 <main>
-        <h2>Experiencia</h2>
-        <section>
-            <p>Gestor telefonico en Aldama Serna y Asociados</p>
+    <div class="row">
+        <div class="col col6">
+            <section id="section-secondary">
+                    <h2>Experiencia</h2>
+                    <p>Gestor telefonico en Aldama Serna y Asociados</p>
+                    <p>Igeniero de campo en Casuni SA de CV</p>
+                    <p>Conductor de Uber</p>
+        </div>
+           </section>
+    </div>
+</main>
+<aside>
+    <div class="row">
+        <div class="col col6">
+            <section id="section-third">
+                    <h3>Educación</h3>
+                    <p>Escuela Secundaria Christel House de México</p>
+                    <p>Colegio de Ciencias y Humanidades Azcapotzalco</p>
+            </div>
+            </section>
+        </div>
+</aside>
+<footer>
+    <div class="row">
+        <div class="col col12">
+            <section id="section-fourd">
+                <h4>Intereses</h4>
+                <ol>
+                  <li>Me gustan los coches y manejarlos</li>
+                  <li>Me gusta el café</li>
+                  <li>Me gusta leer</li>
+                  <li>Me gusta escuchar música</li>
+                  <li>Me gusta ver películas de ciencia ficción</li>
+                  <li>Me gusta ir al cine</li>
+                  <li>Me gusta el futbol</li>
+                  <li>Me gusta viajar y conocer mi país</li>
+               </ol>
+        </div>
         </section>
-        <section>
-            <p>Igeniero de campo en Casuni SA de CV</p>
-        </section>
-        <section>
-            <p>Conductor de Uber</p>
-        </section>
-    </main>
-    <aside>
-        <h3>Educacion</h3>
-        <section>
-            <p>Escuela Secundaria Christel House de Mexico</p>
-        </section>
-        <section> 
-            <p>Colegio de Ciencias y Humanidades Azcapotzalco</p> 
-        </section>
-    </aside>
-    <footer>
-        <h4>Intereses</h4>
-        <ol>
-            <li>Me gustan los coches y manejarlos</li>
-            <li>Me gusta el cafe</li>
-            <li>Me gusta leer</li>
-            <li>Me gusta escuchar musica</li>
-            <li>Me gusta ver peliculas de ciencia ficcion</li>
-            <li>Me gusta ir al cine</li>
-            <li>Me gusta el futbol</li>
-            <li>Me gusta viajar y conocer mi pais</li>
-         </ol>
+    </div>
     </footer>
 </header>
 </html>
